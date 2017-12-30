@@ -4,8 +4,8 @@
 ## Learning Objectives
 * Students will be able to deploy their application on Heroku with a continuous delivery pipeline
 * Students will be able to configure TravisCI to run their tests on all pushes to GitHub
-* Studetns will learn about Continuous Integration
-* Studetns will learn about Continuous Delivery
+* Students will learn about Continuous Integration
+* Students will learn about Continuous Delivery
 
 ## Resources
 * Read [Deploying NodeJS Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
