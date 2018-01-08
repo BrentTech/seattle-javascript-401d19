@@ -1,0 +1,42 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: green;
+  position: relative; }
+
+#main-content {
+  padding: 0 10px; }
+
+.card {
+  background-color: white;
+  display: inline-block;
+  height: 140px;
+  width: 100px;
+  border: solid black 1px;
+  border-radius: 5px;
+  position: relative; }
+  .card .top-left {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .card .bot-right {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.diamonds, .hearts {
+  color: red; }
+
+.clubs, .spades {
+  color: black; }
+
+nav {
+  margin-top: 0;
+  background-color: black;
+  color: white; }
+  nav ul {
+    padding-left: 0; }
+    nav ul li {
+      display: inline-block; }
+
+/*# sourceMappingURL=output.css.map */
