@@ -1,5 +1,13 @@
 $primary: darkgreen;
+$language-spacing: .5em;
 
 body {
   background-color: $primary;
+}
+
+.language-rating {
+  background-color: white;
+  border: solid 1px black;
+  padding: $language-spacing;
+  margin: $language-spacing;
 }
