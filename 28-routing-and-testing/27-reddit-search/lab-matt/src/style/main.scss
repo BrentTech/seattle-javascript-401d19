@@ -1,0 +1,91 @@
+$rose-gold: rgb(255, 134, 78);
+$purple: rgb(151, 49, 151);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $rose-gold;
+}
+
+#main-header {
+  margin: 5px 10px;
+}
+
+.no-results {
+  margin: 15px;
+  margin-left: 30px;
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+  text-shadow: 0px 0px 2px rgb(26, 26, 26);
+}
+
+.error {
+  border: 2px solid red;
+  background-color: rgb(253, 152, 152);
+}
+
+.pre-text-box {
+  display: inline-block;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.reddit {
+  position: relative;
+  margin: 5px;
+  border: black solid 1px;
+  background-color: rgb(208, 255, 147);
+  height: 170px;
+
+  .author {
+    font-style: italic;
+    margin-left: 170px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    margin-top: 5px;
+    margin-left: 170px;
+    color: $purple;
+    font-size: 30px;
+    padding-right: 250px;
+  }
+  
+  .image {
+    float: left;
+    overflow: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .upvote {
+    display: inline-block;
+    max-width: 150px;
+    max-height: 150px;
+    position: absolute;
+    right: 170px;
+    top: 10px;
+  }
+
+  .ups {
+    position: absolute;
+    display: inline-block;
+    font-size: 40px;
+    right: 30px;
+    top: 35%;
+  }
+
+  .subreddit {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: grey;
+    font-size: 25px;
+  }
+}
