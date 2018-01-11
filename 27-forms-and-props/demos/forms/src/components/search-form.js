@@ -12,15 +12,16 @@ class SearchForm extends React.Component {
     this.setState({filter: event.target.value})
   }
 
-  search() {
+  search(event) {
+    event.preventDefault();
     this.props.submitSearch(this.state.filter)
   }
 
   render() {
-    return <div>
-        <input type="text" value={this.state.filter} onChange={this.handleFilter} />
-        <button onClick={this.search}>Search</button>
-    </div>
+    return <form onSubmit={this.search}>
+      <input type="text" value={this.state.filter} onChange={this.handleFilter}/>
+      <button type="submit">Search</button>
+    </form>
   }
 }
 
