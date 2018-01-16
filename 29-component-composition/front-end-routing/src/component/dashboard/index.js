@@ -60,7 +60,7 @@ class Dashboard extends React.Component {
     return(
      <div className='dashboard'>
       <h1>I am a Dashboard!</h1>
-      <ExpenseForm handleComplete={this.handleAddExpense} />
+      <ExpenseForm handleAddExpense={this.handleAddExpense} />
       <ul>
         {
           this.state.expenses.map((expense,index) => 
