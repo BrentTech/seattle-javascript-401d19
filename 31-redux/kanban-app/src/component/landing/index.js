@@ -13,6 +13,8 @@ class Landing extends React.Component{
       sectionRemove,
     } = this.props;
 
+    // section = {title : 'hi'};
+    // newSection = {title: 'bye'}
     return(
       <div className='landing'>
         <SectionForm onComplete={sectionCreate} />
