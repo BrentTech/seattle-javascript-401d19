@@ -7,11 +7,11 @@ import App from './component/app';
 import reducer from './reducer'
 
 import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from './lib/redux-thunk'
+import reporter from './lib/redux-reporter'
 
-//let store = createStore(reducer);
-let middleware = {};
 const store = createStore(reducer, composeWithDevTools(
-  applyMiddleware(...middleware),
+  applyMiddleware(thunk, reporter),
 ));
 
 //--------------------------------------------
