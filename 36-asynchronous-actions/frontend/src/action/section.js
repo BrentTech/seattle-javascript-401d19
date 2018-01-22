@@ -1,7 +1,7 @@
-const superagent = require('superagent');
+import superagent from 'superagent';
 
 // sync actions
-export const setAction = (sections) => ({
+export const setActions = (sections) => ({
   type: 'SECTIONS_SET',
   payload: sections
 });
@@ -26,10 +26,13 @@ export const removeAction = (section) => ({
 });
 
 // async actions
-export const fetchSections = () => (store) => {
-  return superagent.get('http://localhost:3000/sections')
+export const getSections = () => (store) => {
+  //return superagent.get('http://localhost:3000/api/child')
+  return superagent.get('http://localhost:3000/api/lists')
   .then(response => {
-    store.dispatch(setAction(response));
+    console.log(RESPONSE, response)
+    store.dispatch(setActions(response));
+    return response
   })
 }
 
@@ -38,5 +41,6 @@ export const uploadSection = (section) => (store) => {
   .send(section)
   .then(response => {
     store.dispatch(createAction(response));
+    return response
   })
 }

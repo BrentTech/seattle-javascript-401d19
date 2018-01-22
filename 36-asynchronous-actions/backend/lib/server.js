@@ -13,13 +13,14 @@ const mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
 let mongoConnection = mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true})
 
+// mount middleware
+app.use(require('cors')())
+app.use(require('body-parser').json())
+
 // routes (middleware)
 require('../route/route-toy')(router)
 require('../route/route-child')(router)
 
-// mount middleware
-app.use(require('body-parser').json())
-app.use(require('cors')())
 app.use(router)
 
 app.all('/*', (req, res) => res.sendStatus(404))

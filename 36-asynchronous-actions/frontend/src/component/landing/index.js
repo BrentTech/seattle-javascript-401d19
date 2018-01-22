@@ -12,10 +12,12 @@ class Landing extends React.Component{
       sectionCreate,
       sectionUpdate,
       sectionRemove,
+      setSections,
     } = this.props;
 
     return(
       <div className='landing'>
+        <div><button onClick={this.props.setSections}>load sections</button></div>
         <SectionForm onComplete={sectionCreate} />
         {
           sections.map((section,i) =>
@@ -35,6 +37,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
   return{
     sectionCreate: (data) => dispatch(sectionActions.createAction(data)),
+    setSections: (data) => dispatch(sectionActions.setActions(data)),
   }
 };
 

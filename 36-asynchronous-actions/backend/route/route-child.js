@@ -26,6 +26,7 @@ module.exports = function(router) {
   router.get('/api/child', (req, res) => {
     debug('/api/child GET')
 
+    console.log('GET')
     return Child.find()
     .populate('toy')
     .then(children => res.json(children.map(child => child._id)))

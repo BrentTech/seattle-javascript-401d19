@@ -1,50 +1,74 @@
-'use strict';
+'use strict'
 
-const HTMLPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// load environment
+require('dotenv').config()
 
-const webPackConfig = module.exports = {};
+// dependencies
+const HTMLPlugin = require('html-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin')
+const UglifyPlugin = require('uglifyjs-webpack-plugin')
+const ExtractPlugin = require('extract-text-webpack-plugin')
+const {DefinePlugin, EnvironmentPlugin} = require('webpack')
 
-//------------------------------------------------------------
-webPackConfig.entry = `${__dirname}/src/main.js`;
-webPackConfig.output = {
-  filename : 'bundle.[hash].js',
-  path : `${__dirname}/build`,
-}
-//------------------------------------------------------------
-webPackConfig.plugins = [
+// boolean that equals true if NODE_ENV === 'production'
+const production = process.env.NODE_ENV === 'production'
+
+// default plugins
+let plugins = [
+  new EnvironmentPlugin(['NODE_ENV']),
+  new ExtractPlugin('bundle.[hash].css'),
   new HTMLPlugin(),
-  new ExtractTextPlugin('bundle.[hash].css'),
-];
-//------------------------------------------------------------
-webPackConfig.module = {
-  rules: [
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader', 
-    },
-    {
-      test:  /\.scss$/,
-      loader: ExtractTextPlugin.extract({
-        use: [
-          'css-loader', 
-          'resolve-url-loader', 
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true, 
-              includePaths: [`${__dirname}/src/style`],
-            }
-          }
-        ]
-      }),
-    }
-  ],
-};
-//------------------------------------------------------------
-webPackConfig.devtool = 'eval-source-map';
+  new DefinePlugin({
+    __DEBUG__: JSON.stringify(!production),
+    __API_URL__: JSON.stringify(process.env.API_URL),
+  }),
+]
 
-webPackConfig.devServer = {
-  historyApiFallback: true
-};
+// production plugins
+if(production){
+  plugins = plugins.concat([
+    new CleanPlugin(),
+    new UglifyPlugin(),
+  ])
+}
+
+// export config
+module.exports = {
+  plugins,
+  entry: `${__dirname}/src/main.js`,
+  output: {
+    filename: 'bundle.[hash].js',
+    path: `${__dirname}/build`,
+    publicPath: process.env.CDN_URL,
+  },
+  // force webpack-dev-server to suport single page apps
+  // my making it server index.html when it cant find a file 
+  // for the route
+  devServer: { historyApiFallback: true },
+  devtool: production ? undefined : 'cheap-module-eval-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: 'file-loader', // works like cp (unix command)
+            options: {
+              name: 'image/[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
+  },
+}
+
