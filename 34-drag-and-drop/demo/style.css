@@ -1,0 +1,18 @@
+body {
+  background-color: yellow;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  border: solid black 1px;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+#delete {
+  padding: 1em;
+  background-color: red;
+  border: solid black 1px;
+}
