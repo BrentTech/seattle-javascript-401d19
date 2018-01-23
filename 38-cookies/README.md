@@ -1,12 +1,13 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 38: File Reader API 
-====
+![cf](http://i.imgur.com/7v5ASc8.png) 38: Cookies
+===
 
 ## Learning Objectives
-* Students will learn to use the FileReader API to  preview files 
+* Students will learn to manage Basic and Bearer authentication on the client side
+* Students will learn to manage cookies on the client side 
 
 ## Readings
-* Read [Using files in web applications](https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications)
-* Skim [FileReader.readAsDataURL docs](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL)
+* Read [cookies](https://www.quirksmode.org/js/cookies.html)
+* Read [Http Cookie Wiki](https://en.wikipedia.org/wiki/HTTP_cookie)
 
-## Previewing images
-Using the HTML5 FileReader API, browser applications can now ask users to read local files, and then read the contents of those files. Input tags of type file can retrieve files from the user. Those files can then be loaded through the a `FileReader`. Once a FileReader has loaded the contents of a file it can then be processed as an ArrayBuffer, BinaryString, DataURL, or Text. After a user selects a photo it can be previewed, by loading the contents using a FileReader and then passing a DataURL into an `<img>` tag.
+## Cookies 
+Cookies are key value pairs that can store text. They are meant to be a reliable place to store stateful information on the browser. Cookies can be given an expiration date, and the browser will automatically remove them when that date occurs.
