@@ -17,7 +17,7 @@ OAuth is an open standard for access delegation. It servers as a way to give use
 
 #### Access Code
 * First the client needs to grant the application permission.
-* To do this you need to give an anchor tag that will take them to the services authorization page
+* To do this you need to make an anchor tag that will take them to the services authorization page
 * The anchor tag should pass the following information through a query string to the authorization server
   * `response_type=code` indicates that your server wants to recieve an authorization code
   * `client_id=<your client id>` tells the authorization server which app the user is granting access to
