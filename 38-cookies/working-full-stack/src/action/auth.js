@@ -1,6 +1,6 @@
 import superagent from 'superagent';
 import * as routes from '../routes';
-import * as cookies from '../lib/cookie';
+import {cookieDelete} from '../lib/util.js';
 
 //----------------------------------------------
 // SYNC
@@ -15,10 +15,9 @@ export const removeTokenAction = () => ({
 });
 
 export const logoutAction = () => {
-  cookies.cookieDelete('X-Sluggram-Token');
-  // vinicio - re-using the TOKEN_REMOVE action
+  cookieDelete('X-Sluggram-Token');
   return removeTokenAction();
-};
+}
 
 //----------------------------------------------
 // ASYNC
