@@ -1,17 +1,12 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 39: SVGS and Fonts 
-===
+![cf](http://i.imgur.com/7v5ASc8.png) 39: File Reader API 
+====
 
 ## Learning Objectives
-* Students will learn to load fonts with webpack
-* Stuendts will learn how to create icons using svgs
-* Stuendts will learn the difference between icon-fonts and inline svgs
+* Students will learn to use the FileReader API to  preview files 
 
 ## Readings
-* Skim [url-loader docs](https://webpack.js.org/loaders/url-loader/)
-* Read [icon-font vs inline-vg](https://css-tricks.com/icon-fonts-vs-svg/)
+* Read [Using files in web applications](https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications)
+* Skim [FileReader.readAsDataURL docs](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL)
 
-## url loader
-the url loader works can eather copy an imported asset into the build path, or turn it into a DataURL. 
-
-## svg 
-SVGs are nativly supported in HTML. By using inline SVG's you open the potential for much more styling control. 
+## Previewing images
+Using the HTML5 FileReader API, browser applications can now ask users to read local files, and then read the contents of those files. Input tags of type file can retrieve files from the user. Those files can then be loaded through the `FileReader`. Once a FileReader has loaded the contents of a file it can then be processed as an ArrayBuffer, BinaryString, DataURL, or Text. After a user selects a photo it can be previewed by loading the contents using a FileReader and then passing a DataURL into an `<img>` tag.
