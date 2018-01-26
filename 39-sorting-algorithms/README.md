@@ -1,2 +1,2 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 40: Hashtables
+![cf](http://i.imgur.com/7v5ASc8.png) 39 : Sorting Algorithms
 ====
