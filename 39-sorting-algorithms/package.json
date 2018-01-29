@@ -1,0 +1,17 @@
+{
+  "name": "39-sorting-algorithms",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) 40: Hashtables ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4",
+    "jest-cli": "^22.1.4"
+  }
+}
