@@ -1,8 +1,4 @@
-console.log('working')
-
 const socket = io();
-console.log('ID:', socket.id)
-
 
 // <form id="send-message-form">
 //   <input id="message-input"></input>
@@ -22,8 +18,16 @@ sendMessageForm.addEventListener('submit', (ev) => {
 })
 
 socket.on('receive-message', (data) => {
-  console.log('RECEIVED:', data)
-  let div = document.createElement('div')
-  div.innerHTML = data.message
-  messagesContainer.appendChild(div)
+  console.log('MSG', data)
+  let message = new ChatMessage(data)
+  message.render(messagesContainer)
+})
+
+let setUsernameForm = document.getElementById('set-username-form')
+let usernameInput = document.getElementById('username-input')
+
+setUsernameForm.addEventListener('submit', (ev) => {
+  ev.preventDefault()
+  let username = usernameInput.value
+  socket.emit('set-username', {username: username})
 })

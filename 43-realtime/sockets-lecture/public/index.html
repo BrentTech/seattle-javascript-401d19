@@ -11,6 +11,11 @@
   <h1>Sockets!</h1>
   <p>oh my</p>
 
+  <form id="set-username-form">
+    <input id="username-input" />
+    <button type="submit">save</button>
+  </form>
+
   <form id="send-message-form">
     <input id="message-input" />
     <button type="submit">send</button>
@@ -19,5 +24,6 @@
   <div id="messages"></div>
 </body>
 <script src="/socket.io/socket.io.js"></script>
+<script src='/js/models/chat-message.js'></script>
 <script src='/js/main.js'></script>
 </html>
