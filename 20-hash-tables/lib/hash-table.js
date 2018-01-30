@@ -14,6 +14,8 @@
   get
   remove
 */
+let something = () => ){};
+
 const LinkedList = require('./linked-list.js');
 
 module.exports = class HashTable{

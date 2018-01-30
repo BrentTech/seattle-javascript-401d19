@@ -29,7 +29,7 @@ class Landing extends React.Component{
     this.props.doLogin(user)
       .then(() => {
         this.props.fetchClientProfile();
-        this.props.history.push(routes.DASHBOARD_ROUTE);
+        this.props.history.push(routes.PROFILE_ROUTE);
       })
       .catch(console.error);
   }

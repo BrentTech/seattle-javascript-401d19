@@ -35,14 +35,21 @@ export const updateAction = (user) => (store) => {
     .then(response => {
       return store.dispatch(setAction(response.body));
     });
-}
+};
 
 export const fetchAction = () => (store) => {
+  /**{
+   *    state : ...
+   *    clientProfile : ...
+   * } 
+   * 
+  */
   let {token} = store.getState();
+  //let token = store.getState().token;
 
   return superagent.get(`${__API_URL__}${routes.PROFILE_ROUTE}/me`)
     .set('Authorization',`Bearer ${token}`)
     .then(response => {
       return store.dispatch(setAction(response.body));
     });
-}
+};

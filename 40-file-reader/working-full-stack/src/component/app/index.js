@@ -37,10 +37,12 @@ class App extends React.Component {
   }
 }
 
+// PROPS
 let mapStateToProps = (state) => ({
   loggedIn: !! state.token,
 });
 
+// ACTIONS
 const mapDispatchToProps = (dispatch) => ({
   fetchClientProfile: () => dispatch(clientProfile.fetchAction()),
 });
