@@ -25,7 +25,7 @@ webPackConfig.output = {
   filename : 'bundle.[hash].js',
   path : `${__dirname}/build`,
   publicPath : process.env.CDN_URL,
-}
+};
 //------------------------------------------------------------
 webPackConfig.plugins = [
   new HTMLPlugin({title : 'Full Stack Application! ^-^'}),
@@ -72,5 +72,5 @@ webPackConfig.module = {
 webPackConfig.devtool = PRODUCTION ? undefined : 'eval-source-map';
 
 webPackConfig.devServer = {
-  historyApiFallback: true
+  historyApiFallback: true,
 };

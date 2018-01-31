@@ -1,0 +1,39 @@
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2018-01-30T20:03:25.509Z"}
+{"level":"info","message":"Processing : GET on : /oauth/google?code=4/DyyxzGZq3qqlyiUc4aBcSg5lYLCjQjKj9oUFpD4L0PY&authuser=0&hd=codefellows.com&session_state=1c006d23f5bbc07b23cab574e7e750bf128113b2..6d1f&prompt=consent","timestamp":"2018-01-30T20:04:31.680Z"}
+{"code":"4/DyyxzGZq3qqlyiUc4aBcSg5lYLCjQjKj9oUFpD4L0PY","level":"info","message":"","timestamp":"2018-01-30T20:04:31.681Z"}
+{"level":"info","message":"Back from GOOGLE_OAUTH_URL","timestamp":"2018-01-30T20:04:31.824Z"}
+{"level":"info","message":"Getting OPEN_ID_URL","timestamp":"2018-01-30T20:04:31.824Z"}
+{"level":"info","message":"Back from OPEN_ID_URL","timestamp":"2018-01-30T20:04:32.124Z"}
+{"profile":{"kind":"plus#personOpenIdConnect","sub":"112995202111828115769","name":"Vinicio Sánchez","given_name":"Vinicio","family_name":"Sánchez","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50","email":"vinicio@codefellows.com","email_verified":"true","locale":"en","hd":"codefellows.com"},"level":"info","message":"","timestamp":"2018-01-30T20:04:32.124Z"}
+{"error":{},"level":"info","message":"","timestamp":"2018-01-30T20:04:32.200Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2018-01-30T20:11:58.285Z"}
+{"level":"info","message":"Processing : GET on : /oauth/google?code=4/6arkydHIuuGUTKpoYRFn4CY7e749CGgnvKihmxYdfV0&authuser=0&hd=codefellows.com&session_state=2458342f063d196e46c2fb8a364b5576019320aa..094c&prompt=consent","timestamp":"2018-01-30T20:12:12.033Z"}
+{"code":"4/6arkydHIuuGUTKpoYRFn4CY7e749CGgnvKihmxYdfV0","level":"info","message":"","timestamp":"2018-01-30T20:12:12.035Z"}
+{"level":"info","message":"Back from GOOGLE_OAUTH_URL","timestamp":"2018-01-30T20:12:12.249Z"}
+{"level":"info","message":"Getting OPEN_ID_URL","timestamp":"2018-01-30T20:12:12.250Z"}
+{"level":"info","message":"Back from OPEN_ID_URL","timestamp":"2018-01-30T20:12:12.486Z"}
+{"profile":{"kind":"plus#personOpenIdConnect","sub":"112995202111828115769","name":"Vinicio Sánchez","given_name":"Vinicio","family_name":"Sánchez","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50","email":"vinicio@codefellows.com","email_verified":"true","locale":"en","hd":"codefellows.com"},"level":"info","message":"","timestamp":"2018-01-30T20:12:12.486Z"}
+{"level":"info","message":"Ready to create account","timestamp":"2018-01-30T20:12:12.500Z"}
+{"level":"info","message":"Processing : GET on : /oauth/google?code=4/oqJNvSwdaCiBIcrAyTpX-w81ficxBV764eLAQ7AbLbI&authuser=1&session_state=a0194797f1beb763840ec3c16c71ef52d968cd27..b1bc&prompt=consent","timestamp":"2018-01-30T20:13:01.189Z"}
+{"code":"4/oqJNvSwdaCiBIcrAyTpX-w81ficxBV764eLAQ7AbLbI","level":"info","message":"","timestamp":"2018-01-30T20:13:01.189Z"}
+{"level":"info","message":"Back from GOOGLE_OAUTH_URL","timestamp":"2018-01-30T20:13:02.251Z"}
+{"level":"info","message":"Getting OPEN_ID_URL","timestamp":"2018-01-30T20:13:02.252Z"}
+{"level":"info","message":"Back from OPEN_ID_URL","timestamp":"2018-01-30T20:13:02.751Z"}
+{"profile":{"kind":"plus#personOpenIdConnect","gender":"male","sub":"114106058504597035508","name":"Vladimir Sanchez","given_name":"Vladimir","family_name":"Sanchez","profile":"https://plus.google.com/114106058504597035508","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50","email":"vladimirsan28@gmail.com","email_verified":"true","locale":"en"},"level":"info","message":"","timestamp":"2018-01-30T20:13:02.752Z"}
+{"level":"info","message":"Ready to create account","timestamp":"2018-01-30T20:13:02.755Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2018-01-30T20:13:51.821Z"}
+{"level":"info","message":"Processing : GET on : /oauth/google?code=4/gjNhUyYKwkbtGfo7JeLj4fTrmn0rR4LjlNbnwx1ArC0&authuser=0&hd=codefellows.com&session_state=c682d8bac5ca82e612f34bfa88776acd6e47114b..e134&prompt=none","timestamp":"2018-01-30T20:14:23.757Z"}
+{"code":"4/gjNhUyYKwkbtGfo7JeLj4fTrmn0rR4LjlNbnwx1ArC0","level":"info","message":"","timestamp":"2018-01-30T20:14:23.759Z"}
+{"level":"info","message":"Back from GOOGLE_OAUTH_URL","timestamp":"2018-01-30T20:14:23.877Z"}
+{"level":"info","message":"Getting OPEN_ID_URL","timestamp":"2018-01-30T20:14:23.877Z"}
+{"level":"info","message":"Back from OPEN_ID_URL","timestamp":"2018-01-30T20:14:24.097Z"}
+{"profile":{"kind":"plus#personOpenIdConnect","sub":"112995202111828115769","name":"Vinicio Sánchez","given_name":"Vinicio","family_name":"Sánchez","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50","email":"vinicio@codefellows.com","email_verified":"true","locale":"en","hd":"codefellows.com"},"level":"info","message":"","timestamp":"2018-01-30T20:14:24.097Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2018-01-30T20:16:20.911Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2018-01-30T20:17:24.531Z"}
+{"level":"info","message":"Processing : GET on : /oauth/google?code=4/C1cHF9c6zjb6XTg3y20fyMAxZZxrQlQzUFpRUWCRI40&authuser=1&session_state=e202b2f422c245a866f86835ea9834d1499525af..19fd&prompt=none","timestamp":"2018-01-30T20:18:06.408Z"}
+{"code":"4/C1cHF9c6zjb6XTg3y20fyMAxZZxrQlQzUFpRUWCRI40","level":"info","message":"","timestamp":"2018-01-30T20:18:06.409Z"}
+{"level":"info","message":"Back from GOOGLE_OAUTH_URL","timestamp":"2018-01-30T20:18:06.557Z"}
+{"level":"info","message":"Getting OPEN_ID_URL","timestamp":"2018-01-30T20:18:06.557Z"}
+{"level":"info","message":"Back from OPEN_ID_URL","timestamp":"2018-01-30T20:18:06.770Z"}
+{"profile":{"kind":"plus#personOpenIdConnect","gender":"male","sub":"114106058504597035508","name":"Vladimir Sanchez","given_name":"Vladimir","family_name":"Sanchez","profile":"https://plus.google.com/114106058504597035508","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50","email":"vladimirsan28@gmail.com","email_verified":"true","locale":"en"},"level":"info","message":"","timestamp":"2018-01-30T20:18:06.770Z"}
+{"error":{},"level":"info","message":"","timestamp":"2018-01-30T20:18:06.788Z"}
