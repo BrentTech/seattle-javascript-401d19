@@ -9,7 +9,7 @@ const reverseInt = (n) => {
 
   while(n !== 0){
     reversed = (reversed * 10) + (n % 10);
-      n = Math.floor(n/10);
+    n = Math.floor(n/10);
   }
   return reversed;
 }
@@ -17,26 +17,3 @@ const reverseInt = (n) => {
 reverseInt(459); // prints 954
 ```
 
-```javascript
-const reverseInt = (n) => {
-  let reversed = n.toString().split('').reverse().join('');
-  return parseInt(reversed) * Math.sign(n);
-}
-
-reverseInt(-987); // prints -789
-```
-
-```javascript
-// izzy's ultra fancy BS solution using toString
-
-const reverseInt = (n) => parseInt(n.toString().split('').reverse().join('')) * Math.sign(n);
-
-reverseInt(7583); // prints 3857
-```
-
-```javascript
-// second fancy solution using Math.sign() to keep negatives
-const reverseInt = (n) => Math.sign(n) * Number(('' + Math.abs(n)).split('').reverse().join(''));
-
-reverseInt(4583); // prints 3854
-```
