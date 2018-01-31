@@ -1,0 +1,5 @@
+### Visually illustrated the problem domain with examples (1 point)
+### Presents a working pseudo-code solution (1 point)
+### Solved the technical problem with Javascript (1 point)
+### Big O time and space are analyzed (1 point)
+### Whiteboard was readable (penmanship and spacing)(1 point)
