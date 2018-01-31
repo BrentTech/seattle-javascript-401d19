@@ -22,7 +22,7 @@ fib(1) // prints 1
 ```js
 // clean and clear solution
 function fib(n) {
-  if (n === 0) {
+  if (n <= 0) {
     return 0
   } else if (n <= 2) {
     return 1
