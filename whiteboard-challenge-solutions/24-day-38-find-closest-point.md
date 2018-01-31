@@ -18,16 +18,6 @@ console.log(' CLOSEST:', closest)
 ```
 
 ```js
-const randCoord = () => (100 * Math.random())
-const randPoint = () => ({x: randCoord(), y: randCoord()})
-let points = [randPoint(), randPoint(), randPoint(), randPoint()]
-let location = randPoint()
-let closest = closestPoint(points, location)
-
-console.log('  POINTS:', points)
-console.log('LOCATION:', location)
-console.log(' CLOSEST:', closest)
-
 function closestPoint(points, location) {
   // sample the data to get initial closest point
   let minDistance = distance(points[0], location)
