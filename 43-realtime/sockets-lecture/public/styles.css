@@ -10,3 +10,8 @@ body {
 .username {
   font-weight: bold;
 }
+
+.message img {
+  max-height: 75px;
+  max-width: 75px;
+}

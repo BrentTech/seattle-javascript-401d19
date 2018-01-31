@@ -31,3 +31,18 @@ setUsernameForm.addEventListener('submit', (ev) => {
   let username = usernameInput.value
   socket.emit('set-username', {username: username})
 })
+
+let sendImageForm = document.getElementById('send-image-form')
+let imageUrlInput = document.getElementById('image-url-input')
+
+sendImageForm.addEventListener('submit', (ev) => {
+  ev.preventDefault()
+  let imageUrl = imageUrlInput.value
+  socket.emit('send-image', {url: imageUrl})
+})
+
+socket.on('receive-image', (data) => {
+  console.log('MSG', data)
+  let message = new ChatMessage(data)
+  message.render(messagesContainer)
+})

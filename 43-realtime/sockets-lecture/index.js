@@ -23,6 +23,14 @@ io.on('connection', (socket) => {
     io.emit('receive-message', data)
   })
 
+  socket.on('send-image', (data) => {
+    data.username = USERS[socket.id].username
+    data.timestamp = new Date()
+
+    console.log('IMAGE:', data.url)
+    io.emit('receive-image', data)
+  })
+
   socket.on('set-username', (data) => {
     USERS[socket.id].username = data.username
   })

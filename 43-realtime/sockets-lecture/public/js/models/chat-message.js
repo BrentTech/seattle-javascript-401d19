@@ -1,8 +1,10 @@
 class ChatMessage {
-  constructor(message) {
-    this.username = message.username
-    this.timestamp = message.timestamp
-    this.message = message.message
+  constructor(data) {
+    this.data = data
+
+    this.username = data.username
+    this.timestamp = data.timestamp
+    this.message = data.message
   }
 
   render(parentElement) {
@@ -11,6 +13,7 @@ class ChatMessage {
     let timestamp = document.createElement('span')
     let username = document.createElement('span')
     let message = document.createElement('span')
+    let img = document.createElement('img')
 
     container.classList.add('message')
     timestamp.classList.add('timestamp')
@@ -22,7 +25,12 @@ class ChatMessage {
 
     container.appendChild(timestamp)
     container.appendChild(username)
-    container.appendChild(message)
+    if (this.data.url) {
+      img.src = this.data.url
+      container.appendChild(img)
+    } else {
+      container.appendChild(message)
+    }
 
     console.log('REDNER DONE')
     parentElement.appendChild(container)
