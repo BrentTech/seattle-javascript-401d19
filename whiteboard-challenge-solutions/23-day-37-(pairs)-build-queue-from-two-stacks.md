@@ -1,12 +1,12 @@
 build a queue using two stacks, DO NOT create an array inside of the Queue class
 
-// method 1 - make enQueue operation costly
-// this method makes sure that oldest entered element is always at the top of stack 1, so that deQueue operation just pops from stack1
-// to put the element at the top of stack1, stack2 is used
+* method 1 - make enQueue operation costly
+  * this method makes sure that oldest entered element is always at the top of stack 1, so that deQueue operation just pops from stack1
+  * to put the element at the top of stack1, stack2 is used
 
-// method 2 - make deQueue operation costly (better method)
-// in enQueue operation the new element is entered at top of stack1
-// in deQueue operation, if stack2 is empty then all the elements are moved to stack2 and finally the top of stack2 is returned
+* method 2 - make deQueue operation costly (better method)
+  * in enQueue operation the new element is entered at top of stack1
+  * in deQueue operation, if stack2 is empty then all the elements are moved to stack2 and finally the top of stack2 is returned
 
 method 1 moves all the elements twice in enQueue operation, while method 2 (in deQueue operation) moves the elements once and moves elements only if stack2 empty.
 
