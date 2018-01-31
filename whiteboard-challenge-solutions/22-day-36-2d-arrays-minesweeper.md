@@ -1,6 +1,6 @@
 # Minesweeper
 
-![Minesweeper screenshot](./minesweeper-mine-counting/screenshot.png)
+![Minesweeper screenshot](./screenshot.png)
 
 Given a 2D array that represents a minefield with randomly placed mines write
 a function that returns a 2D array where each index contains the number of
