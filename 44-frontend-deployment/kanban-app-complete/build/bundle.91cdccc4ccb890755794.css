@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono);* {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+html {
+  position: relative;
+}
+
+html head,
+html link,
+html script {
+  display: none;
+}
+
+html body {
+  position: relative;
+}
+
+html span,
+html em,
+html strong,
+html i {
+  display: inline;
+}.app {
+  padding: 1em;
+}
+
+@media screen and (min-width: 960px) {
+  .app {
+    width: 960px;
+    margin: 0 auto;
+  }
+}.landing .section-form:first-child {
+  padding: 0.5em;
+  border: 1px solid #77affa;
+  margin-bottom: 0.5em;
+}
+
+.landing .section-container {
+  height: calc(100vh - 8em);
+  border: 1px solid #77affa;
+  padding: 0.5em;
+}
+
+.landing .section-container .section {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 700px) {
+  .section-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .section-container .section {
+    white-space: normal;
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    margin-right: 0.5em;
+  }
+}.section {
+  border: 2px solid #abc;
+  padding: 0.5em;
+  overflow: scroll;
+}
+
+.section h2,
+.section .delete:first-child {
+  float: left;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 90%;
+  padding: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.section .delete {
+  height: 50px;
+  width: 10%;
+  top: 0.25em;
+  right: 0.25em;
+  padding: 0.25em;
+  background: #ff7a7a;
+  color: #fff;
+  transition: transform 200ms, background 200ms;
+}
+
+.section .delete:hover {
+  background: #cc6262;
+}
+
+.section .delete:hover span {
+  display: block;
+}
+
+.section .delete:active {
+  background: #803d3d;
+  background: #cc6262;
+}.card .edit,
+.card .delete {
+  float: left;
+  width: 25%;
+  height: 2em;
+}
+
+.card main {
+  float: left;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background: #ff7a7a;
+}
+
+.card p {
+  display: block;
+  padding-top: 1.5em;
+}
+
+.card .card-form,
+.card textarea {
+  border: none !important;
+}.card-form {
+  margin: 0.5em 0;
+  border: 1px solid #77affa;
+}
+
+.card-form h1,
+.card-form h2,
+.card-form h3,
+.card-form h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #000;
+}
+
+.card-form h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+.card-form h2 {
+  font-size: 1.728em;
+}
+
+.card-form h3 {
+  font-size: 1.44em;
+}
+
+.card-form h4 {
+  font-size: 1.2em;
+}
+
+.card-form p {
+  color: #26262b;
+}
+
+.card-form strong {
+  font-weight: bold;
+}
+
+.card-form em,
+.card-form i {
+  font-style: italic;
+}
+
+.card-form a {
+  text-decoration: underline;
+  font-family: sans-serif;
+  color: #77affa;
+}
+
+.card-form a:hover {
+  color: #5f8cc8;
+}
+
+.card-form a:active {
+  color: #3c587d;
+}
+
+.card-form a:visited {
+  color: #cc6262;
+}
+
+.card-form pre {
+  padding-left: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+
+.card-form ul {
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+}
+
+.card-form button {
+  padding: 0.5em;
+  background-color: #77affa;
+  color: #fff;
+}
+
+.card-form button:hover {
+  background-color: #5f8cc8;
+}
+
+.card-form button:focus {
+  background-color: #5f8cc8;
+}
+
+.card-form button:active {
+  background-color: #3c587d;
+}
+
+.card-form input {
+  padding: 0.5em;
+  outline: 1px solid #abc;
+}
+
+.card-form input:focus {
+  outline: 1px solid #77affa;
+}
+
+.card-form textarea {
+  padding: 0.5em;
+  resize: none;
+  margin-bottom: 0.5em;
+  height: 5em;
+}.section-form h1,
+.section-form h2,
+.section-form h3,
+.section-form h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #000;
+}
+
+.section-form h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+.section-form h2 {
+  font-size: 1.728em;
+}
+
+.section-form h3 {
+  font-size: 1.44em;
+}
+
+.section-form h4 {
+  font-size: 1.2em;
+}
+
+.section-form p {
+  color: #26262b;
+}
+
+.section-form strong {
+  font-weight: bold;
+}
+
+.section-form em,
+.section-form i {
+  font-style: italic;
+}
+
+.section-form a {
+  text-decoration: underline;
+  font-family: sans-serif;
+  color: #77affa;
+}
+
+.section-form a:hover {
+  color: #5f8cc8;
+}
+
+.section-form a:active {
+  color: #3c587d;
+}
+
+.section-form a:visited {
+  color: #cc6262;
+}
+
+.section-form pre {
+  padding-left: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+
+.section-form ul {
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+}
+
+.section-form button {
+  padding: 0.5em;
+  background-color: #77affa;
+  color: #fff;
+}
+
+.section-form button:hover {
+  background-color: #5f8cc8;
+}
+
+.section-form button:focus {
+  background-color: #5f8cc8;
+}
+
+.section-form button:active {
+  background-color: #3c587d;
+}
+
+.section-form input {
+  padding: 0.5em;
+  outline: 1px solid #abc;
+}
+
+.section-form input:focus {
+  outline: 1px solid #77affa;
+}
+
+.section-form input {
+  margin-bottom: 0.5em;
+}.drop-zone {
+  height: 100%;
+}
