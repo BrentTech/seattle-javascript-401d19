@@ -1,0 +1,19 @@
+{
+  "name": "51-extra-graphs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "interview-problem.js",
+  "scripts": {
+    "test": "jest -i --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "jest-cli": "^22.2.2"
+  },
+  "dependencies": {
+    "js-priority-queue": "^0.1.5"
+  }
+}
